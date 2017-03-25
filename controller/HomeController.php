@@ -21,6 +21,7 @@
 	                require 'view/cadastro.php';
 	                break;
 	            default:
+	            	$this->login();
 	               	require 'view/index.php';
 	                break;
 	        }
@@ -31,7 +32,7 @@
 		}
 
 		function login(){
-			if($_SESSION['username'] != '')
+			if(!isset($_SESSION['usuario']))
 				$usuario = True;
 			else
 				$usuario = False;

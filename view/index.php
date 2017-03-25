@@ -23,11 +23,12 @@
 
     <ul class="nav navbar-nav navbar-right">
     	<?php
-        $controller->login()
+
         if($controller->usuario == True){
           echo "<li><a href='index.php?pg=login'><span class='glyphicon glyphicon-log-in'></span> Login</a></li>";
         }
-        else{
+        else
+        {
           echo "<li><a href='#'>Bem vindo, ". $_SESSION['nome'] . "</a></li>
           <li><a href='index.php?pg=mensagem'><span class='glyphicon glyphicon-envelope'></span> Enviar Mensagem</a></li>
           <li><a href='index.php?pg=sair'>Sair</a></li>";
