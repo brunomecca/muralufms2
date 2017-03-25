@@ -1,7 +1,7 @@
 <?php
 	class MensagemDAO{
 
-		public static function adicionarNoBanco($mensagem){
+		public static function adicionarNoBanco($mensagem, $link){
 			$titulo = $mensagem.getTitulo();
 			$mensagem = $mensagem.getMensagem();
 			$id_usuario = $mensagem.getIdUsuario();
