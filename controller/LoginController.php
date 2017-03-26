@@ -23,6 +23,10 @@
 					$_SESSION['email'] = $usuario->getEmail();
 					$_SESSION['usuario'] = $usuario->getUsername();
 					$_SESSION['id'] = $usuario->getId();
+					if($usuario->admin == True)
+						$_SESSION['admin'] = True;
+					else
+						$_SESSION['admin'] = False;
 					header("Location:index.php");
  				}
 				else{

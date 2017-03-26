@@ -29,9 +29,12 @@
         }
         else
         {
-          echo "<li><a href='#'>Bem vindo, ". $_SESSION['nome'] . "</a></li>
-          <li><a href='?page=mensagens'><span class='glyphicon glyphicon-envelope'></span> Enviar Mensagem</a></li>
-          <li><a href='?page=sair'>Sair</a></li>";
+          if(isset($_SESSION) && $_SESSION['admin'] == True)
+            echo "<li><a href='?page=admin'>Zona do ADM, " . $_SESSION['nome'] . "</a></li>";
+          else
+            echo "<li><a href='#'>Bem vindo, ". $_SESSION['nome'] . "</a></li>
+          <li><a href='?page=mensagens'><span class='glyphicon glyphicon-envelope'></span> Enviar Mensagem</a></li>";
+          echo "<li><a href='?page=sair'>Sair</a></li>";
         }
       ?>
 	</ul><!-- list -->

@@ -5,6 +5,7 @@
 		private $senha;
 		private $username;
 		private $id;
+		public $admin;
 
 		function __construct($email, $password, $nome, $username, $id){
 			$this->email = $email;

@@ -6,8 +6,8 @@
 			$email = $usuario->getEmail();
 			$senha = $usuario->getSenha();
 			$username = $usuario->getUsername();
-
-			$inseresql = mysqli_query($link, "INSERT INTO usuarios (nome, email, senha, usuario) VALUES ('$nome', '$email', '$senha', '$username')");
+			$admin = 0;
+			$inseresql = mysqli_query($link, "INSERT INTO usuarios (nome, email, senha, usuario, admin) VALUES ('$nome', '$email', '$senha', '$username', '$admin')");
 
 			if($inseresql == True){
 				return True;
@@ -28,6 +28,8 @@
 			if($conta > 0){
 				$lnMsg = mysqli_fetch_array($selecionaUser);
 				$usuario = new Usuario($lnMsg['email'], $lnMsg['senha'], $lnMsg['nome'], $lnMsg['usuario'], $lnMsg['id']);
+				if($lnMsg['admin'] == 1)
+					$usuario->admin = True;
 				return $usuario;
 			}
 			return new Usuario(null,null,null,null);
