@@ -34,7 +34,7 @@
           else
             echo "<li><a href='#'>Bem vindo, ". $_SESSION['nome'] . "</a></li>";
           echo "<li><a href='?page=mensagens'><span class='glyphicon glyphicon-envelope'></span> Enviar Mensagem</a></li>";
-          echo "<li><a href='?page=minhasmensagens'><span class = 'glyphicon glyphicon-envelope'></span> Minhas Mensagens</a></li>";
+          echo "<li><a href='?page=minhasmensagens'><span class = 'glyphicon glyphicon-user'></span> Painel</a></li>";
           echo "<li><a href='?page=sair'>Sair</a></li>";
         }
       ?>
