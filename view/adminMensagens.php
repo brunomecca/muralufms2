@@ -8,13 +8,8 @@
 	<div class="container-fluid">
 
 		<div class="row">
-
 			<div class="col-md-4">
-
-
 				<div id="panel-admin-opcoes" class="panel panel-default">
-
-
 				  	<div class="panel-heading">Opções</div>
 				  	<div class="panel-body">
 				  		<li>
@@ -22,10 +17,7 @@
 				  			<ul>Administrar usuarios</ul>
 				  		</li>
 				  	</div>
-				
 				</div>
-
-
 			</div>
 
 

@@ -1,5 +1,5 @@
 <footer>
-    <div class="col-md-11">
+    <div id="footer" class="col-md-12">
       <div class='text-center'>
 
         ©Copyright Mural UFMS 

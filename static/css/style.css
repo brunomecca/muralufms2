@@ -15,7 +15,18 @@ and open the template in the editor.
     --light-green : #2dff16;
 }
 
+/**
+    FOOTER
+ */
 
+#footer
+ {
+    border-top:1.5px;
+    border-top-style: solid;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+ }
 
 /**
     NAVBAR
@@ -58,7 +69,7 @@ and open the template in the editor.
 }
 
 #form-login ,#form-cadastro{
-    position: relative;
+
     top: 100px;
 
     width: 50%;
