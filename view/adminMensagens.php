@@ -5,26 +5,16 @@
 	<div class="container-fluid">
 
 		<div class="row">
-<<<<<<< HEAD
-			<div class="col-md-4">
-				<div id="panel-admin-opcoes" class="panel panel-default">
-				  	<div class="panel-heading">Opções</div>
-=======
 
 			<div class="col-md-2">
 
 					<h3>Menu do Adm</h3>
->>>>>>> origin/master
 				  	<div class="panel-body">
 				  		<ul class="list-group">
 				  			<a href="?page=admin"><li class="list-group-item">Avaliar Mensagens</li></a>
 				  			<a href="?page=avaliarUsuarios"><li class="list-group-item">Avaliar Usuários</li></a>
 				  		</ul>
 				  	</div>
-<<<<<<< HEAD
-				</div>
-=======
->>>>>>> origin/master
 			</div>
 
 

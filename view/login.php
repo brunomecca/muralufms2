@@ -1,10 +1,10 @@
 <?php
-	require_once("header.php");
+    require_once("header.php");
 ?>
 <div id="container">
 <div id="form-login" class="container">
     <div class="row">
-    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
             <h1>Mural UFMS - Login</h1>
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="input-group">
@@ -17,7 +17,7 @@
                 </div>
                 <input type="submit" class="btn btn-lg btn-primary" value="Logar" class="btn" />
                 <input type="hidden" id="page" name="page" value="login"/>
-				<a href="?page=usuario">
+                <a href="?page=usuario">
                     <button type="button" class="btn btn-lg btn-primary">Cadastrar</button>
                 </a>
             </form>
@@ -27,5 +27,5 @@
 </div>
 </div>
 <?php
-	require("footer.php");
+    require("footer.php");
 ?>
