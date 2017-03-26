@@ -1,11 +1,13 @@
 <?php
 	class MensagemDAO{
 
-		public static function adicionarNoBanco($mensagem, $link){
-			$titulo = $mensagem.getTitulo();
-			$mensagem = $mensagem.getMensagem();
-			$id_usuario = $mensagem.getIdUsuario();
-			$opiniao = $mensagem.getOpiniao();
+		public static function adicionarNoBanco($mensagem){
+			require "connect.php";
+			$titulo = $mensagem->getTitulo();
+			$mensagem = $mensagem->getMensagem();
+			
+			$id_usuario = $mensagem->getIdUsuario();
+			$opiniao = $mensagem->getOpiniao();
 			$positivo = 0;
 			$negativo = 0;
 
@@ -16,7 +18,8 @@
 				return False;
 		}
 
-		public static function puxarDoBanco($link){
+		public static function puxarDoBanco(){
+			require "connect.php";
 			$consulta = mysqli_query($link, "SELECT * FROM mensagens ORDER BY id DESC");
 			return $consulta;
 		}

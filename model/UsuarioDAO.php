@@ -27,7 +27,7 @@
 			$conta = @mysqli_num_rows($selecionaUser);
 			if($conta > 0){
 				$lnMsg = mysqli_fetch_array($selecionaUser);
-				$usuario = new Usuario($lnMsg['email'], $lnMsg['senha'], $lnMsg['nome'], $lnMsg['usuario']);
+				$usuario = new Usuario($lnMsg['email'], $lnMsg['senha'], $lnMsg['nome'], $lnMsg['usuario'], $lnMsg['id']);
 				return $usuario;
 			}
 			return new Usuario(null,null,null,null);

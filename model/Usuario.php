@@ -6,11 +6,12 @@
 		private $username;
 		private $id;
 
-		function __construct($email, $password, $nome, $username){
+		function __construct($email, $password, $nome, $username, $id){
 			$this->email = $email;
 			$this->senha = $password;
 			$this->nome = $nome;
 			$this->username = $username;	
+			$this->id = $id;
 		}
 
 		function getNome(){

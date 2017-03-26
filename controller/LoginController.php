@@ -22,6 +22,7 @@
 					$_SESSION['nome'] = ucfirst($usuario->getNome());
 					$_SESSION['email'] = $usuario->getEmail();
 					$_SESSION['usuario'] = $usuario->getUsername();
+					$_SESSION['id'] = $usuario->getId();
 					header("Location:index.php");
  				}
 				else{
@@ -34,7 +35,7 @@
 		{
 			$email = $_POST['email'];
 			$password = $_POST['password'];
-			$usuario = new Usuario($email, $password, 0, 0);
+			$usuario = new Usuario($email, $password, 0, 0, 0);
 			$usuarioResultado = $this->verificaLogin($usuario);
 			return $usuarioResultado;
 		}
@@ -46,7 +47,7 @@
 			if($senha == $usuario->getSenha())
 				return $usuario;
 			else
-				return new Usuario(null,null,null,null);
+				return new Usuario(null,null,null,null,null);
 	
 		}
 
@@ -54,6 +55,7 @@
 			unset($_SESSION['nome']);
 			unset($_SESSION['email']);
 			unset($_SESSION['usuario']);
+			unset($_SESSION['id']);
 			session_destroy();
 			header("Location:index.php");
 		}
