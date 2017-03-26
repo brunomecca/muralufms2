@@ -1,28 +1,27 @@
 <?php
 	session_start();
+	require_once "model/Usuario.php";
+	require_once "model/Mensagem.php";
 	require_once "model/MensagemDAO.php";
 	require_once "model/UsuarioDAO.php";
 	require_once "controller/HomeController.php";
 	require_once "controller/LoginController.php";
+	require_once "controller/UsuarioController.php";
+	require_once "controller/MensagemController.php";
 	require_once "func/funcoes.php";
-
-
-
 
 	if(!isset($_GET['page']) || $_GET['page'] == ''){
 		$controller = new HomeController();
 	}
-	elseif(!isset($_GET['page']) || $_GET['page'] == 'login'){
+	elseif(isset($_GET['page']) && $_GET['page'] == 'login' || $_GET['page'] == 'sair'){
 		$controller = new LoginController();
 	}
-	elseif(!isset($_POST['page']) || $_POST['page'] == 'login'){
-		$controller = new LoginController();
-	}
-	elseif(!isset($_GET['page']) || $_GET['page'] == 'usuario')
+	elseif(isset($_GET['page']) && $_GET['page'] == 'usuario'){
 		$controller = new UsuarioController();
-	elseif(!isset($GET['page']) || $_GET['page'] == 'mensagem')
+	}
+	elseif(isset($_GET['page']) && $_GET['page'] == 'mensagens'){
 		$controller = new MensagemController();
-
+	}
 
 	$controller->init();
 ?>

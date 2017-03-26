@@ -2,7 +2,6 @@
 	class HomeController{
 		public function init() {
 	        $this->enviarMensagem(); 
- 
 	    }
 
 		function enviarMensagem(){

@@ -1,16 +1,16 @@
 <?php
 	class Usuario{
-		var $nome;
-		var $email;
-		var $senha;
-		var $username;
-		var $id;
+		private $nome;
+		private $email;
+		private $senha;
+		private $username;
+		private $id;
 
-		function __construct($nome, $email, $senha, $username){
-			$this->nome = $nome;
+		function __construct($email, $password, $nome, $username){
 			$this->email = $email;
-			$this->senha = $senha;
-			$this->username = $username;
+			$this->senha = $password;
+			$this->nome = $nome;
+			$this->username = $username;	
 		}
 
 		function getNome(){
