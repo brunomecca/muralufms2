@@ -47,13 +47,13 @@
 
 							      <tr>
 
-							      	<td> <?php echo ucfirst($lnMsg['titulo']); ?> </td>
+							      	<td><?php echo ucfirst($lnMsg['titulo']); ?> </td>
 							        <td><?php echo $lnMsg['mensagem']; ?></td>
 							        <td><?php echo ucfirst($lnMsg['opiniao']); ?></td>
 							        <td><?php echo $lnMsg['data']; ?></td>
 							        <td><?php echo $lnMsg['positivo']; ?></td>
 							        <td><?php echo $lnMsg['negativo']; ?></td>
-							        <td><?php echo $lnMsg['aprovado']; ?></td>
+							        <td><?php if($lnMsg['aprovado'] == '1') echo 'Aprovado'; else echo 'Reprovado'; ?></td>
 
 							
 							      </tr>
