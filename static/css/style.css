@@ -16,6 +16,7 @@ and open the template in the editor.
 }
 
 
+
 /**
     NAVBAR
  */
@@ -32,6 +33,16 @@ and open the template in the editor.
 .navbar-brand {
     color : white !important;
 }
+
+
+/*
+    PAGINA MINHAS MENSAGENS
+*/
+#table-minhas-mensagens td , #table-minhas-mensagens th {
+    word-wrap: break-word;
+    max-width: 150px;
+}
+
 
 /**
     LOGIN E CADASTRO
