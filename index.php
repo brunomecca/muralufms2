@@ -23,7 +23,19 @@
 	elseif(isset($_GET['page']) && $_GET['page'] == 'mensagens' || $_GET['page'] == 'minhasmensagens'){
 		$controller = new MensagemController();
 	}
-	elseif(isset($_GET['page']) && $_GET['page'] == 'admin' || $_GET['page'] == 'adminMensagens' || $_GET['page'] == 'adminUsuarios' ){
+	elseif(isset($_GET['page']) && $_GET['page'] == 'admin' || $_GET['page'] == 'adminMensagens' || $_GET['page'] == 'avaliarUsuarios'){
+		$controller = new AdminController();
+	}
+	if(isset($_GET['remove'])){
+		$controller = new AdminController();
+	}
+	elseif(isset($_GET['aceita'])){
+		$controller = new AdminController();
+	}
+	if(isset($_GET['exclui'])){
+		$controller = new AdminController();
+	}
+	elseif(isset($_GET['definir'])){
 		$controller = new AdminController();
 	}
 

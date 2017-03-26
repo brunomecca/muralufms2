@@ -36,5 +36,21 @@
 			$consulta = mysqli_query($link, "SELECT * FROM mensagens WHERE '$id' = id_usuario");
 			return $consulta;
 		}
+
+		public static function puxarDoBancoReprovadas(){
+			require "connect.php";
+			$consulta = mysqli_query($link, "SELECT * FROM mensagens WHERE aprovado = 0");
+			return $consulta;
+		}
+
+		public static function aceitarMensagem($id){
+			require "connect.php";
+			$consulta = mysqli_query($link, "UPDATE mensagens SET aprovado = '1' WHERE id = '$id'");
+		}
+
+		public static function removerMensagem($id){
+			require "connect.php";
+			$consulta = mysqli_query($link, "DELETE FROM mensagens WHERE id = '$id'");
+		}
 	}
 ?>

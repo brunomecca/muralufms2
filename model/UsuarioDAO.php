@@ -18,6 +18,7 @@
 		}
 
 		public static function puxarDoBanco(){
+			require "connect.php";
 			$consulta = mysqli_query($link, "SELECT * FROM usuarios ORDER BY id DESC");
 			return $consulta;
 		}
@@ -35,9 +36,14 @@
 			return new Usuario(null,null,null,null);
 		}
 
+		public static function remover($id){
+			require "connect.php";
+			$selecionaUser = mysqli_query($link, "DELETE FROM usuarios WHERE id = '$id'");
+		}
 
-		public static function verificaLogin($usuario){
-
+		public static function definirAdm($id){
+			require "connect.php";
+			$selecionaUser = mysqli_query($link, "UPDATE usuarios SET admin = '1' WHERE id = '$id'");
 		}
 	}
 ?>

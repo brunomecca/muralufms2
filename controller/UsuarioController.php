@@ -43,12 +43,12 @@
 		}
 
 		public function mostrar($usuario){
-			require "view/minhasConfig.php";
+			require "view/meuPerfil.php";
 
 		}
 
 		public function alterar($usuario){
-			require "view/meuPerfil.php";
+			require "view/minhasConfig.php";
 		}
 
 	}
