@@ -32,7 +32,7 @@
 			<div id="panel-admin-mensagens" class="col-md-6">
 
 				<div class="panel panel-default">
-				  	<div class="panel-heading"> NOME DO CONTEUDO EX: MENSAGENS PARA AVALIAR OU USUARIOS PARA REMOVER</div>
+				  	<div class="panel-heading"> Mensagens para avaliar </div>
 				  	<div class="panel-body">
 				  	
 				  		 <table class="table table-bordered">

@@ -1,6 +1,7 @@
 <?php
   require "header.php";
       $naTela = "";
+      $number = 0;
       foreach($homeMensagens as $lnMsg){
               $naTela = $naTela . "<div class='col-md-3'>";
                 if($lnMsg['opiniao'] == 'positivo'){
@@ -16,8 +17,8 @@
 
 
               if(strlen($lnMsg['mensagem']) > 100){
-                $naTela = $naTela . '<br><button class="btn btn-default btn-xs" data-target="#conteudoMensagem" data-toggle="modal">Ler mais</button></div></div>';
-                $naTela = $naTela . '<div class="modal fade" id="conteudoMensagem" role="dialog">
+                $naTela = $naTela . '<br><button class="btn btn-default btn-xs" data-target="#mensagem' .  $number . '" data-toggle="modal">Ler mais</button></div></div>';
+                $naTela = $naTela . '<div class="modal fade" id="mensagem' . $number .'" role="dialog">
                       <div class="modal-dialog">
                       
                         <div class="modal-content">
@@ -35,6 +36,8 @@
                         
                       </div>
                     </div>';
+
+                    $number = $number + 1;
               }else
                 $naTela = $naTela . '</div></div>';
 

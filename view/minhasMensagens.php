@@ -53,7 +53,7 @@
 							        <td><?php echo $lnMsg['data']; ?></td>
 							        <td><?php echo $lnMsg['positivo']; ?></td>
 							        <td><?php echo $lnMsg['negativo']; ?></td>
-							        <td><?php if($lnMsg['aprovado'] == '1') echo 'Aprovado'; else echo 'Reprovado'; ?></td>
+							        <td><?php if($lnMsg['aprovado'] == '1') echo 'Aprovado'; else echo 'Sob Avaliação'; ?></td>
 
 							
 							      </tr>
