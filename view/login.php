@@ -17,6 +17,7 @@
                 </div>
                 <input type="hidden" name="acao" value="login" />
                 <input type="submit" class="btn btn-lg btn-primary" value="Logar" class="btn" />
+                <input type="hidden" id="page" name="page" value="login"/>
 				<a href="pages/cadastro.php">
                     <button type="button" class="btn btn-lg btn-primary">Cadastrar</button>
                 </a>
