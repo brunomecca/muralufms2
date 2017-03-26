@@ -42,7 +42,12 @@ foreach($minhasMensagens as $lnMsg){
 
 
 	<div class= "text-right">
-
+	';
+	if($lnMsg['aprovado'] == 1)
+		$naTela = $naTela . 'Mensagem Aprovada';
+	else
+		$naTela = $naTela . 'Mensagem Reprovada';
+	$naTela = $naTela . '
 	<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>'
 
 	.$lnMsg['positivo'].

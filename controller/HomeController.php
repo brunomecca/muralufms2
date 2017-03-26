@@ -9,10 +9,6 @@
 			$homeMensagens = MensagemDAO::puxarDoBanco();
 			require "view/index.php";
 		}
-
-		function logout(){
-
-		}
 	}
 	
 ?>
