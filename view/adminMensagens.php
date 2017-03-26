@@ -2,77 +2,92 @@
 		require "view/header.php";
 	?>
 
-
-
-
 	<div class="container-fluid">
 
 		<div class="row">
+<<<<<<< HEAD
 			<div class="col-md-4">
 				<div id="panel-admin-opcoes" class="panel panel-default">
 				  	<div class="panel-heading">Opções</div>
+=======
+
+			<div class="col-md-2">
+
+					<h3>Menu do Adm</h3>
+>>>>>>> origin/master
 				  	<div class="panel-body">
-				  		<li>
-				  			<ul>Avaliar mensagens</ul>
-				  			<ul>Administrar usuarios</ul>
-				  		</li>
+				  		<ul class="list-group">
+				  			<a href="?page=admin"><li class="list-group-item">Avaliar Mensagens</li></a>
+				  			<a href="?page=avaliarUsuarios"><li class="list-group-item">Avaliar Usuários</li></a>
+				  		</ul>
 				  	</div>
+<<<<<<< HEAD
 				</div>
+=======
+>>>>>>> origin/master
 			</div>
 
 
-			<div id="panel-admin-mensagens" class="col-md-6">
+			<div id="panel-admin-mensagens" class="col-md-10">
 
 				<div class="panel panel-default">
-				  	<div class="panel-heading"> Mensagens para avaliar </div>
 				  	<div class="panel-body">
 				  	
-				  		 <table class="table table-bordered">
-						    <thead>
-						      <tr>
-						        <th>Mensagem</th>
-						        <th>Positividade</th>
-						        <th>Usuario</th>
-						        <th>Data de criação</th>
-						      </tr>
-						    </thead>
-						    <tbody>
-						      <tr>
-						        <td>KALDMAKLDMAKLDMAKLDA DKAMDAKLDM AKLDM AKLDMA KLDMAKL DMAKL DMAKL DMAKL DMAKL DMAKLDMALKD MADKLM DAKLAMDKLADMAKLM
+							<table class="table table-bordered">
+							    <thead>
+							      <tr>
+							      	<th>Titulo</th>
+							        <th>Mensagem</th>
+							        <th>Opinião</th>
+							        <th>Data de criação</th>
+							        <th>Likes</th>
+							        <th>Dislikes</th>
+							        <th>Status</th>
+							        <th>Ação</th>
+							      </tr>
+							    </thead>
+							    <tbody>
 
 
-
-						        	<div class="text-right">
-
-
-						        		</br>
-
-						        		</br>
-							        	<a href="#+id">
-							        		<button class="btn btn-success">Aprovar</button>
-						        		</a>
-
-						        		<a href="#+id">
-							       			<button class="btn btn-danger">Reprovar</button>
-						       			</a>
-						        	
-
-						        	</div>
-
-						        </td>
-						        <td>Positivo</td>
-						        <td>Marco Cardoso</td>
-						        <td>26/3/2017</td>
+							    <?php
+							    	foreach($mensagensReprovadas as $lnMsg){
 
 
+							    ?>
 
-						        
 
-						      </tr>
-						     
-						    </tbody>
-						  </table>
-				  	</div>
+							      <tr>
+
+							      	<td><?php echo ucfirst($lnMsg['titulo']); ?> </td>
+							        <td><?php echo limitar($lnMsg['mensagem'], 350); ?></td>
+							        <td><?php echo ucfirst($lnMsg['opiniao']); ?></td>
+							        <td><?php echo $lnMsg['data']; ?></td>
+							        <td><?php echo $lnMsg['positivo']; ?></td>
+							        <td><?php echo $lnMsg['negativo']; ?></td>
+							        <td><?php if($lnMsg['aprovado'] == '1') echo 'Aprovado'; else echo 'Reprovado'; ?></td>
+							        <td>
+							        <p><a href="?aceita=<?php echo $lnMsg['id'];?>">
+							        	<button class="btn-xsm btn-success">Aprovar</button>
+						        	</a></p>
+									<a href="?remove=<?php echo $lnMsg['id'];?>">
+							       		<button class="btn-xsm btn-danger">Reprovar</button>
+						       		</a>
+						        	</td>
+							
+							      </tr>
+
+							     <?php
+
+
+							     	}//chave do for-each
+
+							     
+							     ?>
+							    </tbody>
+							  </table>
+
+
+						    
 				
 				</div>
 			</div>

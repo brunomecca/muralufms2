@@ -36,7 +36,15 @@
 			}
 		}
 
+<<<<<<< HEAD
 	
+=======
+		public function mostrar($usuario){
+			require "view/meuPerfil.php";
+
+		}
+
+>>>>>>> origin/master
 		public function alterar($usuario){
 			require "view/minhasConfig.php";
 		}
