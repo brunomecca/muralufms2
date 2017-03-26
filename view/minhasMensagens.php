@@ -6,6 +6,8 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-2">
+
+					<h3>Menu do usuario</h3>
 				  	<div class="panel-body">
 				  		<ul class="list-group">
 				  			<a href="?page=minhasmensagens"><li class="list-group-item">Minhas Mensagens</li></a>
@@ -18,7 +20,7 @@
 			<div id="panel-admin-mensagens" class="col-md-10">
 
 				<div class="panel panel-default">
-				  	<div class="panel-heading"> Minhas Mensagens</div>
+				  	<title><div class="panel-heading"> Minhas Mensagens</div></title>
 					  	<div class="panel-body">
 					  	
 					  		 <table class="table table-bordered">
@@ -71,25 +73,6 @@
 			</div>
 
 		</div>
-<<<<<<< HEAD
-=======
-		</div>';
-	}else
-	$naTela = $naTela . '</div></div>';
-
-	$naTela = $naTela . '
-
-
-	<div class= "text-right">
-	';
-	if($lnMsg['aprovado'] == 1)
-		$naTela = $naTela . 'Mensagem Aprovada';
-	else
-		$naTela = $naTela . 'Mensagem Reprovada';
-	$naTela = $naTela . '
-	<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>'
->>>>>>> 25b7fac4d886bdfecee856be5f31fc5840eda3db
-
 	</div>
 
 <?php
