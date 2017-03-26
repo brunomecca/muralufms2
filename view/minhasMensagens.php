@@ -71,6 +71,24 @@
 			</div>
 
 		</div>
+<<<<<<< HEAD
+=======
+		</div>';
+	}else
+	$naTela = $naTela . '</div></div>';
+
+	$naTela = $naTela . '
+
+
+	<div class= "text-right">
+	';
+	if($lnMsg['aprovado'] == 1)
+		$naTela = $naTela . 'Mensagem Aprovada';
+	else
+		$naTela = $naTela . 'Mensagem Reprovada';
+	$naTela = $naTela . '
+	<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>'
+>>>>>>> 25b7fac4d886bdfecee856be5f31fc5840eda3db
 
 	</div>
 
