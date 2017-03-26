@@ -20,7 +20,7 @@
 	elseif(isset($_GET['page']) && $_GET['page'] == 'usuario'){
 		$controller = new UsuarioController();
 	}
-	elseif(isset($_GET['page']) && $_GET['page'] == 'mensagens'){
+	elseif(isset($_GET['page']) && $_GET['page'] == 'mensagens' || $_GET['page'] == 'minhasmensagens'){
 		$controller = new MensagemController();
 	}
 	elseif(isset($_GET['page']) && $_GET['page'] == 'admin'){

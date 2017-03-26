@@ -1,7 +1,11 @@
 <?php
 	class MensagemController{
 		public function init(){
-			$this->gravarMensagem();
+			if(isset($_GET['page']) && $_GET['page'] == 'minhasmensagens')
+				$this->minhasMensagens();
+			else
+				$this->gravarMensagem();
+
 		}
 
 		public function gravarMensagem(){
@@ -22,6 +26,18 @@
 					echo "<div class='alert alert-danger' role='alert'>Não cadastrado!</div>";
 				}
 			}
+
+		}
+
+		public function minhasMensagens(){
+			if(isset($_SESSION) && $_SESSION['nome'] != ''){
+				$minhasMensagens = MensagemDAO::puxarDoBancoUsuario($_SESSION['id']);
+				require "view/minhasMensagens.php";
+			}
+			else{
+				header("Location:index.php");
+			}
+
 
 		}
 	}

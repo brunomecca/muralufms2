@@ -30,5 +30,11 @@
 			$consulta = mysqli_query($link, "SELECT * FROM mensagens WHERE aprovado = 1 ORDER BY id DESC ");
 			return $consulta;
 		}
+
+		public static function puxarDoBancoUsuario($id){
+			require "connect.php";
+			$consulta = mysqli_query($link, "SELECT * FROM mensagens WHERE '$id' = id_usuario");
+			return $consulta;
+		}
 	}
 ?>

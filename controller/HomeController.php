@@ -6,7 +6,7 @@
 
 		function enviarMensagem(){
 			require "connect.php";
-			$homeMensagens = MensagemDAO::puxarDoBanco($link);
+			$homeMensagens = MensagemDAO::puxarDoBanco();
 			require "view/index.php";
 		}
 
