@@ -48,7 +48,7 @@
 							      <tr>
 
 							      	<td><?php echo ucfirst($lnMsg['titulo']); ?> </td>
-							        <td><?php echo $lnMsg['mensagem']; ?></td>
+							        <td><?php echo limitar($lnMsg['mensagem'], 350); ?></td>
 							        <td><?php echo ucfirst($lnMsg['opiniao']); ?></td>
 							        <td><?php echo $lnMsg['data']; ?></td>
 							        <td><?php echo $lnMsg['positivo']; ?></td>

@@ -1,7 +1,20 @@
 <?php
 	class UsuarioController{
 		public function init(){
-			$this->cadastrar();
+			if(isset($_GET['page']) && $_GET['page'] == 'usuario')
+				$this->cadastrar();
+			elseif(isset($_GET['page']) && $_GET['page'] == 'minhasConfig'){
+				if(isset($_SESSION)){
+					$usuario = new Usuario($_SESSION['email'], 0, $_SESSION['nome'], $_SESSION['usuario'], $_SESSION['id']);
+					$this->mostrar($usuario);
+				} 
+			}
+			else{
+				if(isset($_SESSION)){
+					$usuario = new Usuario($_SESSION['email'], 0, $_SESSION['nome'], $_SESSION['usuario'], $_SESSION['id']);
+					$this->alterar($usuario);
+				} 
+			}
 		}
 
 		public function cadastrar(){
@@ -30,11 +43,12 @@
 		}
 
 		public function mostrar($usuario){
+			require "view/minhasConfig.php";
 
 		}
 
 		public function alterar($usuario){
-
+			require "view/meuPerfil.php";
 		}
 
 	}

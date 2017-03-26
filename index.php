@@ -17,7 +17,7 @@
 	elseif(isset($_GET['page']) && $_GET['page'] == 'login' || $_GET['page'] == 'sair'){
 		$controller = new LoginController();
 	}
-	elseif(isset($_GET['page']) && $_GET['page'] == 'usuario'){
+	elseif(isset($_GET['page']) && $_GET['page'] == 'usuario' || $_GET['page'] == 'minhasConfig' || $_GET['page'] == 'meuPerfil'){
 		$controller = new UsuarioController();
 	}
 	elseif(isset($_GET['page']) && $_GET['page'] == 'mensagens' || $_GET['page'] == 'minhasmensagens'){
