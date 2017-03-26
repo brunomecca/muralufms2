@@ -41,17 +41,21 @@
               $naTela = $naTela . '
 
 
-                <div class= "text-right">
+                <div class="rodape-mensagem">
 
-                  <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>'
+                         <div class="text-right" id="data-mensagem">'
+                              . $lnMsg['data'] .   
 
-                    .$lnMsg['positivo'].
 
-                  '<i class="fa fa-thumbs-o-down" aria-hidden="true"></i>'
+                            '<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>'
 
-                    .$lnMsg['negativo'].
+                              .$lnMsg['positivo'].
 
-                '</div>
+                            '<i class="fa fa-thumbs-o-down" aria-hidden="true"></i>'
+                              .$lnMsg['negativo'].
+                          '</div>
+
+                </div>
 
               </div>';
               $naTela = $naTela . '</div>';

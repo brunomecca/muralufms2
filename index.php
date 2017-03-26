@@ -23,7 +23,7 @@
 	elseif(isset($_GET['page']) && $_GET['page'] == 'mensagens' || $_GET['page'] == 'minhasmensagens'){
 		$controller = new MensagemController();
 	}
-	elseif(isset($_GET['page']) && $_GET['page'] == 'admin'){
+	elseif(isset($_GET['page']) && $_GET['page'] == 'admin' || $_GET['page'] == 'adminMensagens' || $_GET['page'] == 'adminUsuarios' ){
 		$controller = new AdminController();
 	}
 
