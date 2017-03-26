@@ -6,6 +6,12 @@
 			elseif(isset($_GET['page']) && $_GET['page'] == 'minhasConfig'){
 				if(isset($_SESSION)){
 					$usuario = new Usuario($_SESSION['email'], 0, $_SESSION['nome'], $_SESSION['usuario'], $_SESSION['id']);
+					$this->mostrar($usuario);
+				} 
+			}
+			else{
+				if(isset($_SESSION)){
+					$usuario = new Usuario($_SESSION['email'], 0, $_SESSION['nome'], $_SESSION['usuario'], $_SESSION['id']);
 					$this->alterar($usuario);
 				} 
 			}
@@ -16,13 +22,13 @@
 			require "view/cadastro.php";
 
 			if(isset($_POST['page'])){
-				$usuario = new Usuario($_POST['email'], $_POST['password'], $_POST['nome'], $_POST['username']);
+				$usuario = new Usuario($_POST['email'], $_POST['password'], $_POST['nome'], $_POST['username'], 0);
 				$situacao = $this->validarCadastro($usuario);
 				if($situacao == True){
-					echo '<div class="alert alert-success" role="alert">Enviado com sucesso!</div>';
+					echo "<script>alert('Cadastrado com sucesso!')</script>";
  				}
 				else{
-					echo "<div class='alert alert-danger' role='alert'>Não cadastrado!</div>";
+					echo "<script>alert('Usuário inválido!')</script>";
 				}
 			}
 		}

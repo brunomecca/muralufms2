@@ -33,7 +33,7 @@
 					$usuario->admin = True;
 				return $usuario;
 			}
-			return new Usuario(null,null,null,null);
+			return new Usuario(null,null,null,null,null);
 		}
 
 		public static function remover($id){

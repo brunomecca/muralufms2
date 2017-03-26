@@ -30,7 +30,7 @@
 					header("Location:index.php");
  				}
 				else{
-					echo "<div class='alert alert-danger' role='alert'>Usuário inválido!</div>";
+					echo "<script>alert('Usuário inválido!')</script>";
 				}
 			}
 		}
