@@ -36,6 +36,18 @@
 			return new Usuario(null,null,null,null,null);
 		}
 
+
+		public static function atualizarUsuario($usuario){
+			require "connect.php";
+			$id = $usuario->getId();
+			$nome = $usuario->getNome();
+			$username = $usuario->getUsername();
+			$email = $usuario->getEmail();
+			mysqli_query($link, "UPDATE usuarios SET usuario = '$username', nome = '$nome' , email = '$email' WHERE id = '$id'");
+		}
+
+
+
 		public static function remover($id){
 			require "connect.php";
 			$selecionaUser = mysqli_query($link, "DELETE FROM usuarios WHERE id = '$id'");
