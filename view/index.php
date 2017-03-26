@@ -14,8 +14,6 @@
               }
               $naTela = $naTela . '<div class="limitadorPanel"><div class="panel-body">' . limitar($lnMsg['mensagem'],100);
 
-
-
               if(strlen($lnMsg['mensagem']) > 100){
                 $naTela = $naTela . '<br><button class="btn btn-default btn-xs" data-target="#mensagem' .  $number . '" data-toggle="modal">Ler mais</button></div></div>';
                 $naTela = $naTela . '<div class="modal fade" id="mensagem' . $number .'" role="dialog">
@@ -47,15 +45,16 @@
                 <div class="rodape-mensagem">
 
                          <div class="text-right" id="data-mensagem">'
-                              . $lnMsg['data'] .   
+                              . $lnMsg['data'] 
 
-
-                            '<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>'
-
-                              .$lnMsg['positivo'].
-
-                            '<i class="fa fa-thumbs-o-down" aria-hidden="true"></i>'
-                              .$lnMsg['negativo'].
+                              . '<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>'
+							
+							  . '<input id="txtlikepositive" value="' . $lnMsg['positivo'] . '"/><button id="likepositive" onclick="msgPositiveLike(''txtlikepositive'', ''' .  $lnMsg['id'] . ''')"> Gostei</button>'
+							
+                              . '<i class="fa fa-thumbs-o-down" aria-hidden="true"></i>'
+							
+							. '<input id="txtlikenegative" value="' . $lnMsg['negativo'] .'/><button id="liknegative" onclick="msgNegativeLike(''txtlikenegative'', ''' . $lnMsg['id'] . ')"> Não gostei</button>'
+							
                           '</div>
 
                 </div>

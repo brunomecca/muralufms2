@@ -5,9 +5,10 @@
   <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" href="static/css/style.css" />
   <link rel="icon" type="image/png" href="img/mural-ufms.png">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
   <script src="static/js/jquery.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="js/MensagemLike.js"></script>
 </head>
 <body>
 <header>
