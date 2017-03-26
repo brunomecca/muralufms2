@@ -8,17 +8,17 @@
 					$this->definirUsuario();
 				
 				if(isset($_GET['remove'])){
-					$this->remover($_GET['remove']);
+					$this->removerMensagem($_GET['remove']);
 				}
 				elseif(isset($_GET['aceita'])){
-					$this->aceitar($_GET['aceita']);
+					$this->aceitarMensagem($_GET['aceita']);
 				}
 
 				if(isset($_GET['definir'])){
-					$this->definir($_GET['definir']);
+					$this->definirAdm($_GET['definir']);
 				}
 				elseif(isset($_GET['exclui'])){
-					$this->excluir($_GET['exclui']);
+					$this->excluirUsuario($_GET['exclui']);
 				}
 			}
 			else
@@ -32,12 +32,12 @@
 
 		}
 
-		public function remover($id){
+		public function removerMensagem($id){
 			MensagemDAO::removerMensagem($id);
 			header("Location:?page=admin");
 		}
 
-		public function aceitar($id){
+		public function aceitarMensagem($id){
 			MensagemDAO::aceitarMensagem($id);
 			header("Location:?page=admin");
 		}
@@ -48,12 +48,12 @@
 
 		}
 
-		public function excluir($id){
+		public function excluirUsuario($id){
 			UsuarioDAO::remover($id);
 			header("Location:?page=avaliarUsuarios");
 		}
 
-		public function definir($id){
+		public function definirAdm($id){
 			UsuarioDAO::definirAdm($id);
 			header("Location:?page=avaliarUsuarios");
 		}

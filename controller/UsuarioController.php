@@ -42,11 +42,6 @@
 			}
 		}
 
-		public function mostrar($usuario){
-			require "view/meuPerfil.php";
-
-		}
-
 		public function alterar($usuario){
 			require "view/minhasConfig.php";
 		}
