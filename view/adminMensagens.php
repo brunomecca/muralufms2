@@ -11,8 +11,8 @@
 					<h3>Menu do Adm</h3>
 				  	<div class="panel-body">
 				  		<ul class="list-group">
-				  			<a href="?page=admin"><li class="list-group-item">Avaliar Mensagens</li></a>
-				  			<a href="?page=avaliarUsuarios"><li class="list-group-item">Avaliar Usuários</li></a>
+                            <li class="list-group-item"><a href="?page=admin">Avaliar Mensagens</a></li>
+                            <li class="list-group-item"><a href="?page=avaliarUsuarios">Avaliar Usuários</a></li>
 				  		</ul>
 				  	</div>
 			</div>

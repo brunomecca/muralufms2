@@ -9,7 +9,7 @@
 			<div id="panel-admin-mensagens" class="col-md-12">
 
 				<div class="panel panel-default">
-				  	<title><div class="panel-heading"> Minhas Mensagens</div></title>
+				  	<div class="panel-heading"> Minhas Mensagens</div>
 					  	<div class="panel-body">
 					  	
 					  		 <table id="table-minhas-mensagens" class="table table-bordered ">
