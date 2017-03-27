@@ -50,19 +50,6 @@
                             <div class="data-mensagem-index">
                                 ' . $lnMsg['data'] . '
                             </div>
-                            <!--
-                            <div id="icones-mensagem-index">
-                            
-                                 <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                                 
-                                    ' .$lnMsg['positivo']. '
-                                 
-                                 <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
-                                 
-                                 ' .$lnMsg['negativo']. '
-                             
-                             </div>
-                             -->
 
                 </div>
 
