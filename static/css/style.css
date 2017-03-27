@@ -17,16 +17,17 @@ and open the template in the editor.
 
 :root {
     --light-green : #2dff16;
-    --body-color : #414141;
-    --foreground-color : white;
+    --body-color : white;
+    --foreground-color : black;
 
     --minhas-mensagens-foreground-color : black;
     --minhas-mensagens-title-color : white;
-    --panel-positivo-header-color : #1d881f;
-    --panel-negativo-header-color: #b52e2f;
+    --panel-positivo-header-color : #25b327;
+    --panel-negativo-header-color: #e83a3b;
     --modal-dialog-foreground-color : black;
-    --conteudo-mensagens-index-color: #949494;
+    --conteudo-mensagens-index-color: #e4e4e4;
 
+    --footer-foreground-color : white;
     --footer-background-color : black;
 
 }
@@ -35,7 +36,10 @@ and open the template in the editor.
     GLOBAL CONFIGS
 */
 
+
+
 body {
+
 
     color : var(--foreground-color);
     background-color: var(--body-color);
@@ -44,6 +48,13 @@ body {
 /**
     INDEX
 */
+
+
+.menu-navbar {
+
+    background-color : black;
+
+}
 
 #icones-mensagem-index , #data-mensagem-index
 {
@@ -104,11 +115,14 @@ body {
 #footer
  {
     background-color : var(--footer-background-color);
+    color : var(--footer-foreground-color);
     border-top:1.5px;
     border-top-style: solid;
     padding-top: 10px;
     padding-bottom: 100px;
     margin-top: 30px;
+    position: relative !important;
+    bottom: 0px !important;
  }
 
 /**
@@ -121,7 +135,7 @@ body {
  }
 
 .nav a:hover {
-    color: yellow !important;
+    color: blue !important;
 }
 
 .navbar-brand {

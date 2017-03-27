@@ -2,6 +2,7 @@
   require "header.php";
       $naTela = "";
       $number = 0;
+
       foreach($homeMensagens as $lnMsg){
               $naTela = $naTela . "<div class='col-md-3'>";
                 if($lnMsg['opiniao'] == 'positivo'){

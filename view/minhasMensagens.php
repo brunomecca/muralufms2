@@ -5,18 +5,8 @@
 
 	<div class="container-fluid minhas-mensagens-page">
 		<div class="row">
-			<div class="col-md-2">
-
-					<h3>Menu do usuario</h3>
-				  	<div class="panel-body">
-				  		<ul class="list-group">
-                            <li><a href="?page=minhasmensagens">Minhas Mensagens</a></li>
-				  			<a href="?page=minhasConfig"><li >Minhas Configurações</li></a>
-				  		</ul>
-				  	</div>
-			</div>
 			
-			<div id="panel-admin-mensagens" class="col-md-10">
+			<div id="panel-admin-mensagens" class="col-md-12">
 
 				<div class="panel panel-default">
 				  	<title><div class="panel-heading"> Minhas Mensagens</div></title>
