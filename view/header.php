@@ -38,7 +38,7 @@
           <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Painel <span class=\"caret\"></span></a>
           <ul div class=\"dropdown-menu menu-navbar\">";
             echo "<li><a href='?page=minhasmensagens'><span class = 'glyphicon glyphicon-envelope'></span> Minhas Mensagens </a></li>";
-            echo "<li><a href='?page=minhasmensagens'><span class = 'glyphicon glyphicon-user'></span> Meus dados </a></li>";
+            echo "<li><a href='?page=minhasConfig'><span class = 'glyphicon glyphicon-user'></span> Meus dados </a></li>";
             echo "<li><a href='?page=sair'><i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i> Sair</a></li>";
           echo "</ul>";
 
