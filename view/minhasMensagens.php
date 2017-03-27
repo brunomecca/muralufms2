@@ -70,12 +70,13 @@
 										      </div>
 										    </div>
 										  </div>
-										</div>
 
 
-							      		<?php}
+							      		<?php
+							      		}
 							      		else//nao mostra o botao
-							      		{?>
+							      		{
+                                        ?>
 
 							      		<?php
 

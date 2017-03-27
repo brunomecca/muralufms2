@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
   <title>Mural UFMS</title>
   <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" />

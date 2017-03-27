@@ -7,11 +7,11 @@
               $naTela = $naTela . "<div class='col-md-3'>";
                 if($lnMsg['opiniao'] == 'positivo'){
                   $naTela = $naTela . '<div class="panel panel-default">';
-                    $naTela = $naTela . '<div id="panel-mensagem-index" class="panel-heading panel-verde">'. limitar($lnMsg['titulo'],30) .'</div>';
+                    $naTela = $naTela . '<div  class="panel-mensagem-index panel-heading panel-verde"><p>'. limitar($lnMsg['titulo'],30) .'</p></div>';
               }
               else{
                 $naTela = $naTela . '<div class="panel panel-default">';
-                $naTela = $naTela . '<div id="panel-mensagem-index" class="panel-heading panel-vermelho">'. limitar($lnMsg['titulo'],30) . '</div>';
+                $naTela = $naTela . '<div class="panel-mensagem-index panel-heading panel-vermelho"><p>'. limitar($lnMsg['titulo'],30) . '</p></div>';
               }
               $naTela = $naTela . '<div class="conteudo-msg" > <div class="limitadorPanel"><div class="panel-body">' . limitar($lnMsg['mensagem'],100);
 
@@ -47,7 +47,7 @@
 
                 <div class="rodape-mensagem">
 
-                            <div id="data-mensagem-index">
+                            <div class="data-mensagem-index">
                                 ' . $lnMsg['data'] . '
                             </div>
                             <!--
