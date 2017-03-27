@@ -15,9 +15,11 @@
 						<textarea class="form-control" rows="5" required="true" name="mensagem" placeholder="Mensagem"></textarea>
 					</div>
 
+					<!-- Galera, quem cria a mensagem não define se ele é positiva ou negativa
 					Tipo de mensagem:<br>
 					<input type="radio" name="opiniao" value="positivo" checked><span class="label label-success">Positiva</span><br>
   					<input type="radio" name="opiniao" value="negativo"> <span class="label label-danger">Negativa</span><br><br>
+					-->
                     <input type="hidden" name="acao" value="cadastrarMensagem" />
                     <input type="submit" class="btn btn-primary btn-sm" value="Enviar" class="btn" />
 			    </form>
