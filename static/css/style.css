@@ -11,8 +11,90 @@ and open the template in the editor.
 /**
     VARIAVEIS
  */
+
+
+
+
 :root {
     --light-green : #2dff16;
+    --body-color : #414141;
+    --foreground-color : white;
+
+    --minhas-mensagens-foreground-color : black;
+    --minhas-mensagens-title-color : white;
+    --panel-positivo-header-color : green;
+    --panel-negativo-header-color: red;
+    --modal-dialog-foreground-color : black;
+    --conteudo-mensagens-index-color: #414141;
+
+    --footer-background-color : black;
+
+}
+
+/**
+    GLOBAL CONFIGS
+*/
+
+body {
+
+    color : var(--foreground-color);
+    background-color: var(--body-color);
+}
+
+/**
+    INDEX
+*/
+
+#icones-mensagem-index , #data-mensagem-index
+{
+    display:inline;
+}
+
+#data-mensagem-index {
+    margin-left: 20px;
+}
+#icones-mensagem-index {
+    float: right;
+    margin-right: 20px;
+}
+
+.minhas-mensagens-page  {
+    color : var(--minhas-mensagens-foreground-color);
+}
+
+.minhas-mensagens-page h3 {
+    color : var(--minhas-mensagens-title-color) !important;
+}
+
+.panel-verde {
+    background-color : var(--panel-positivo-header-color) !important;
+}
+
+.panel-vermelho {
+    background-color : var(--panel-negativo-header-color) !important;
+}
+
+.modal-dialog {
+    color : var(--modal-dialog-foreground-color);
+}
+
+.conteudo-msg {
+    background-color: var(--conteudo-mensagens-index-color);
+}
+
+#panel-mensagem-index {
+
+    text-decoration: double;
+    font-size: large;
+    font-family: Impact;
+    color : white;
+}
+
+.rodape-mensagem {
+
+    border-top: 1px;
+    border-top-color: white;
+    border-top-style: solid;
 }
 
 /**
@@ -21,10 +103,11 @@ and open the template in the editor.
 
 #footer
  {
+    background-color : var(--footer-background-color);
     border-top:1.5px;
     border-top-style: solid;
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
     margin-top: 30px;
  }
 

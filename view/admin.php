@@ -14,10 +14,10 @@
 
 			  	<div class="panel-heading">Opções</div>
 			  	<div class="panel-body">
-			  		<li>
-			  			<ul>Avaliar mensagens</ul>
-			  			<ul>Administrar usuarios</ul>
-			  		</li>
+			  		<ul>
+			  			<li>Avaliar mensagens</li>
+			  			<li>Administrar usuarios</li>
+			  		</ul>
 			  	</div>
 			
 			</div>

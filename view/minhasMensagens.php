@@ -3,7 +3,7 @@
 	?>
 
 
-	<div class="container-fluid">
+	<div class="container-fluid minhas-mensagens-page">
 		<div class="row">
 			<div class="col-md-2">
 
