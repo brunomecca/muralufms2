@@ -48,7 +48,7 @@
 				$_SESSION['email'] = $usuario->getEmail();
 				$_SESSION['usuario'] = $usuario->getUsername();
 				$_SESSION['nome'] = $usuario->getNome();
-				header("Location:index.php");
+
 			}
 
 		}
