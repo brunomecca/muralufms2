@@ -5,13 +5,8 @@
 				$this->cadastrar();
 			elseif(isset($_GET['page']) && $_GET['page'] == 'minhasConfig'){
 				if(isset($_SESSION)){
-					$usuario = new Usuario($_SESSION['email'], 0, $_SESSION['nome'], $_SESSION['usuario'], $_SESSION['id']);
-					$this->mostrar($usuario);
-				} 
-			}
-			else{
-				if(isset($_SESSION)){
-					$usuario = new Usuario($_SESSION['email'], 0, $_SESSION['nome'], $_SESSION['usuario'], $_SESSION['id']);
+
+					$usuario = new Usuario($_SESSION['email'], 0 , $_SESSION['nome'], $_SESSION['usuario'], $_SESSION['id']);
 					$this->alterar($usuario);
 				} 
 			}
@@ -42,8 +37,20 @@
 			}
 		}
 
+
 		public function alterar($usuario){
 			require "view/minhasConfig.php";
+			if(isset($_POST['page']) )
+			{
+				$usuario = new Usuario($_POST['email'], 0, $_POST['nome'], $_POST['usuario'], $_SESSION['id']);
+				UsuarioDAO::atualizarUsuario($usuario);
+				
+				$_SESSION['email'] = $usuario->getEmail();
+				$_SESSION['usuario'] = $usuario->getUsername();
+				$_SESSION['nome'] = $usuario->getNome();
+				header("Location:index.php");
+			}
+
 		}
 
 	}

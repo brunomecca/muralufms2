@@ -1,46 +1,38 @@
 <?php
 	require "header.php";
 ?>
+
+        <h2 class="text-center">Edite os seus dados !</h2>
          <div id="form-cadastro" class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
 
                     <div id="panel-cadastro" class="panel panel-default">
                        
-                        <form name="form-cadastro form-horizontal" onsubmit="return validarCadastro()" action="" method="post" enctype="multipart/form-data" class="form-signin">
+                        <form name="form-edit-configs form-horizontal" onsubmit="return validarCadastro()" action="" method="post" enctype="multipart/form-data" class="form-signin">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Coloque seu nome!">
+                                <input type="text" id="usuario" name="usuario" class="form-control"  required="true"
+                                value="<?php echo $usuario->getUsername(); ?>" />
+                                <span></span>
+                            </div>
+                            <p></p>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input type="text" id="nome" name="nome" class="form-control" required="true"
+                                    value="<?php echo $usuario->getNome(); ?>">
                                     <span></span>
                             </div>
                             <p></p>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glypicon glyphicon-envelope"></i></span>
-                                    <input type="text" id="email" name="email" class="form-control" placeholder="Coloque seu e-mail!">
+                                    <input type="text" id="email" name="email" class="form-control" required="true"
+                                    value ="<?php echo $usuario->getEmail(); ?>">
                                     <span></span>
                             </div>
                             <p></p>
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                <input type="text" id="username" name="username" class="form-control" placeholder="Coloque o seu nome de usuario! " required="true" />
-                                <span></span>
-                            </div>
-                            <p></p>
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
-                                <input type="password" id="password" name="password" class="form-control" placeholder="Coloque a sua senha! " required="true" />
-                                <span></span>
-                            </div>
-                            <p></p>
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
-                                <input type="password" id="confirm-password" name="confirm-password" class="form-control" placeholder="Coloque a sua senha! " required="true" />
-                                <span></span>
-                            </div>
-                            <p></p>
-                            <input type="hidden" name="page" value="cadastrar" />
-                            <input type="submit" value="Cadastrar" class="btn btn-lg btn-primary" />
-                        </div>
+                            <input type="hidden" name="page" value="editar" />
+                            <input type="submit" value="Efetuar mudanças" class="btn btn-lg btn-primary" />
                         </form>
                     </div>
                 </div>

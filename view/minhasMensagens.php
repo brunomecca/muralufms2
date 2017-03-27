@@ -12,7 +12,6 @@
 				  		<ul class="list-group">
 				  			<a href="?page=minhasmensagens"><li class="list-group-item">Minhas Mensagens</li></a>
 				  			<a href="?page=minhasConfig"><li class="list-group-item">Minhas Configurações</li></a>
-				  			<a href="?page=meuPerfil"><li class="list-group-item">Meu Perfil</li></a>
 				  		</ul>
 				  	</div>
 			</div>

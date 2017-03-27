@@ -15,7 +15,7 @@
                     <span class="input-group-addon"><i class="fa fa-key"></i></span>
                     <input type="password" id="password" name="password" class="form-control" placeholder="Coloque a sua senha! " required="true" />
                 </div>
-                <input type="submit" class="btn btn-lg btn-primary" value="Logar" class="btn" />
+                <input type="submit" class="btn btn-lg btn-primary" value="Logar"  />
                 <input type="hidden" id="page" name="page" value="login"/>
                 <a href="?page=usuario">
                     <button type="button" class="btn btn-lg btn-primary">Cadastrar</button>
