@@ -11,21 +11,21 @@
 
                         <form name="form-edit-configs form-horizontal" onsubmit="return validarCadastro()"  method="post" enctype="multipart/form-data" class="form-signin">
                             <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i>  Usuário:</span>
                                 <input type="text" id="usuario" name="usuario" class="form-control"  required
                                 value="<?php echo $usuario->getUsername(); ?>" />
                                 <span></span>
                             </div>
                             <p></p>
                             <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i> Nome:</span>
                                     <input type="text" id="nome" name="nome" class="form-control" required
                                     value="<?php echo $usuario->getNome(); ?>">
                                     <span></span>
                             </div>
                             <p></p>
                             <div class="input-group">
-                                <span class="input-group-addon"><i class="glypicon glyphicon-envelope"></i></span>
+                                <span class="input-group-addon"><i class="glypicon glyphicon-envelope"></i> Email:</span>
                                     <input type="text" id="email" name="email" class="form-control" required
                                     value ="<?php echo $usuario->getEmail(); ?>">
                                         <span></span>
@@ -38,6 +38,8 @@
                 </div>
             </div>
          </div>
+
+    <script type="text/javascript" src="static/js/atualizaDados.js"></script>
 
 <?php
     require "footer.php";

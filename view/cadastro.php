@@ -12,13 +12,13 @@
                         <form name="form-cadastro form-horizontal" onsubmit="return validarCadastro()" method="post" enctype="multipart/form-data" class="form-signin">
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Coloque seu nome!">
+                                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Coloque seu nome!" required>
                                     <span></span>
                             </div>
                             <p></p>
                             <div class="input-group">
                                 <span class="input-group-addon"><i class="glypicon glyphicon-envelope"></i></span>
-                                    <input type="text" id="email" name="email" class="form-control" placeholder="Coloque seu e-mail!">
+                                    <input type="text" id="email" name="email" class="form-control" placeholder="Coloque seu e-mail!" required>
                                     <span></span>
                             </div>
                             <p></p>
