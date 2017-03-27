@@ -49,11 +49,11 @@
 
                               . '<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>'
 							
-							  . '<input id="txtlikepositive" value="' . $lnMsg['positivo'] . '"/><button id="likepositive" onclick="msgPositiveLike(''txtlikepositive'', ''' .  $lnMsg['id'] . ''')"> Gostei</button>'
+							  . '<input id="txtlikepositive" value="' . $lnMsg['positivo'] . '"/><button id="likepositive" onclick="msgPositiveLike(''' .  $lnMsg['id'] . ''')"> Gostei</button>'
 							
                               . '<i class="fa fa-thumbs-o-down" aria-hidden="true"></i>'
 							
-							. '<input id="txtlikenegative" value="' . $lnMsg['negativo'] .'/><button id="liknegative" onclick="msgNegativeLike(''txtlikenegative'', ''' . $lnMsg['id'] . ')"> Não gostei</button>'
+			    			  . '<input id="txtlikenegative" value="' . $lnMsg['negativo'] .'/><button id="liknegative" onclick="msgNegativeLike(''' . $lnMsg['id'] . ''')"> Não gostei</button>'
 							
                           '</div>
 

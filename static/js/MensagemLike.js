@@ -17,16 +17,16 @@ function mensgaemLikePhpAjax(fldLikeParam, tipoLikeParam, idMsgParam) {
   return false;
 }
 
-function msgPositiveLike(fldLikeParam, idMsgParam) {
+function msgPositiveLike(idMsgParam) {
 	
-	mensgaemLikePhpAjax(fldLikeParam, "1", idMsgParam)	
+	mensgaemLikePhpAjax("txtlikepositive", "1", idMsgParam)	
 	return false;
 	
 }	
 
-function msgNegativeLike(fldLikeParam, idMsgParam) {
+function msgNegativeLike(idMsgParam) {
 	
-	mensgaemLikePhpAjax(fldLikeParam, "-1", idMsgParam)	
+	mensgaemLikePhpAjax("txtlikenegative", "-1", idMsgParam)	
 	return false;
 	
 }	
