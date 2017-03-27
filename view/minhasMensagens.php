@@ -10,8 +10,8 @@
 					<h3>Menu do usuario</h3>
 				  	<div class="panel-body">
 				  		<ul class="list-group">
-				  			<a href="?page=minhasmensagens"><li class="list-group-item">Minhas Mensagens</li></a>
-				  			<a href="?page=minhasConfig"><li class="list-group-item">Minhas Configurações</li></a>
+                            <li><a href="?page=minhasmensagens">Minhas Mensagens</a></li>
+				  			<a href="?page=minhasConfig"><li >Minhas Configurações</li></a>
 				  		</ul>
 				  	</div>
 			</div>

@@ -35,7 +35,7 @@
             echo "<li><a href='#'>Bem vindo, ". $_SESSION['nome'] . "</a></li>";
           echo "<li><a href='?page=mensagens'><span class='glyphicon glyphicon-envelope'></span> Enviar Mensagem</a></li>";
           echo "<li class=\"dropdown\">
-          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Dropdown <span class=\"caret\"></span></a>
+          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">Panel <span class=\"caret\"></span></a>
           <ul class=\"dropdown-menu\">
             <li><a href=\"#\">Action</a></li>
             <li><a href=\"#\">Another action</a></li>

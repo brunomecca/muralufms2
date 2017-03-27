@@ -22,10 +22,10 @@ and open the template in the editor.
 
     --minhas-mensagens-foreground-color : black;
     --minhas-mensagens-title-color : white;
-    --panel-positivo-header-color : green;
-    --panel-negativo-header-color: red;
+    --panel-positivo-header-color : #1d881f;
+    --panel-negativo-header-color: #b52e2f;
     --modal-dialog-foreground-color : black;
-    --conteudo-mensagens-index-color: #414141;
+    --conteudo-mensagens-index-color: #949494;
 
     --footer-background-color : black;
 
@@ -84,9 +84,9 @@ body {
 
 #panel-mensagem-index {
 
-    text-decoration: double;
+    font-weight: bold;
     font-size: large;
-    font-family: Impact;
+    font-family: Arial;
     color : white;
 }
 
